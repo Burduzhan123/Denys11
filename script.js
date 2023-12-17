@@ -40,7 +40,7 @@ let worker = {
   
     slow(x) {
       alert("Called with " + x);
-      return x * this.someMethod(); // (*)
+      return x * this.someMethod(); 
     }
   };
   
@@ -50,7 +50,7 @@ let worker = {
       if (cache.has(x)) {
         return cache.get(x);
       }
-      let result = func(x); // (**)
+      let result = func(x); 
       cache.set(x, result);
       return result;
     };
